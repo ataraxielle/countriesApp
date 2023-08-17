@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Country List</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Countries</a></li>
+    </ul>
+  </nav>
+  <div class="breadcrumb">
+    You are here: Home > Countries
+  </div>
+  <main>
+    <table id="countryTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Population</th>
+          <th>Region</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be added dynamically using JavaScript -->
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    &copy; 2023 Your Company
+  </footer>
+  <script>
+    // JavaScript code goes here
+    document.addEventListener("DOMContentLoaded", function () {
+      const countryTable = document.getElementById('countryTable').getElementsByTagName('tbody')[0];
+
+      fetch('https://restcountries.com/v3/all')
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(country => {
+            const row = countryTable.insertRow();
+
+            const nameCell = row.insertCell(0);
+            const populationCell = row.insertCell(1);
+            const regionCell = row.insertCell(2);
+
+            const countryLink = document.createElement('a');
+            countryLink.href = `country.html?name=${encodeURIComponent(country.name.common)}`;
+            countryLink.textContent = country.name.common;
+            nameCell.appendChild(countryLink);
+
+            populationCell.textContent = country.population;
+            regionCell.textContent = country.region;
+          });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    });
+  </script>
+</body>
+</html>
