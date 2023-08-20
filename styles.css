@@ -15,6 +15,11 @@ body, h1, h2, ul, li, p, table {
     padding: 1rem;
   }
   
+  .navCustom{
+    background-color: 
+    #703859;
+    padding: 10px
+  }
   
   nav ul {
     list-style: none;
@@ -27,11 +32,49 @@ body, h1, h2, ul, li, p, table {
 
   }
   
-  nav a {
+ .navbar-brand{
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar-nav .nav-item .nav-link.active {
+    background-color: transparent;
+  }
+
+  a {
     color: black;
     text-decoration: none;
   }
-  
+  .gifContainer {
+    height: 100vh;
+    position: sticky;
+    text-align: center;
+    justify-content: center;
+  }
+  #gifGlobe {
+    height: 60vh
+  }
+
+  .buttonContainer {
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  .jumpButton {
+    padding: 10px 20px;
+    background-color: #703859;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+
+  .jumpButton:hover {
+    background-color: #70383D;
+  }
   .breadcrumb{
     background-color: transparent;
     margin-top: 0%;
@@ -41,22 +84,52 @@ body, h1, h2, ul, li, p, table {
 
   }
 
+  
   .content{
     margin-top: 2%;
   }
  
   
   table {
-    width: 100%;
+    width: 800px;
     border-collapse: collapse;
-    margin-top: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
   
-  th, td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+  th,
+  td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
   }
+  
+  tr {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+  
+  /* Animation on row hover */
+  tr:hover {
+    background-color: transparent; /* Initial background color */
+    animation: wavyFill 1s linear infinite alternate; /* Animation properties */
+  }
+  
+  /* Keyframes for wavyFill animation */
+  @keyframes wavyFill {
+    0% {
+      background-position: 0 0; /* Start position of the gradient */
+    }
+    100% {
+      background-position: 0 100%; /* End position of the gradient */
+    }
+  }
+  
+
+  
+
+  
   
 
   #viewBtn {
