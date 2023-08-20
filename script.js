@@ -20,8 +20,9 @@ fetch("https://restcountries.com/v3.1/all")
         } else if (sortBy === "population") {
           return a.population - b.population;
         }
+
         
-        return 0; 
+        return 0; // Default: no sorting
       });
       
       sortedData.forEach(country => {
@@ -48,7 +49,9 @@ fetch("https://restcountries.com/v3.1/all")
         populationCell.textContent = country.population;
         row.appendChild(populationCell);
         
-
+        // Add more cells for additional columns
+        
+        // Add a clickable UI element
         const buttonCell = document.createElement("td");
         const button = document.createElement("button");
         button.textContent = "View";

@@ -1,39 +1,53 @@
 /* Custom styles for the country page */
+#country-details,
+#country-more {
+  background-color: #f8f9fa;
+  margin: 0 auto; /* Center the containers horizontally */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  min-height: 22vh;
+  font-size: 14pt;
+}
 
-#country-details {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
 
-  .countryDetailsContainer{
-    width: 100%;
-  }
+.countryDetailsContainer {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
 
-  .flag-container {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 100%;
-  }
-  
-  #country-details h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  #country-details p {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-  
-  .flag-image {
-    max-width: 150px; /* Adjust the size of the flag */
-    margin-right: 20px; /* Space between flag and country info */
-  }
+.card {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  justify-content: center;
 
-  
+}
+
+#flag, #coatOfArms{
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 70%;
+  text-align: right;
+  justify-content: right;
+}
+
+#country-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#country-details p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.flag-image {
+  width: 20%;
+  margin-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

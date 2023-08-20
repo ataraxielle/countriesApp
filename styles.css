@@ -8,7 +8,8 @@ body, h1, h2, ul, li, p, table {
   }
   
   header {
-    background-color: #333;
+    background-color: 
+    #703859;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -33,7 +34,15 @@ body, h1, h2, ul, li, p, table {
   
   .breadcrumb{
     background-color: transparent;
+    margin-top: 0%;
 
+    position: sticky;
+    height:20px;
+
+  }
+
+  .content{
+    margin-top: 2%;
   }
  
   
@@ -53,12 +62,17 @@ body, h1, h2, ul, li, p, table {
   #viewBtn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color:  #703859;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+
+  #countryCard {
+    height: 5%;
+    width: 100%;
   }
 
   #sort-select {
@@ -72,8 +86,9 @@ body, h1, h2, ul, li, p, table {
   }
   
   /* Button styles on hover */
-  #viewBtn  {
-    background-color: #2980b9;
+  #viewBtn:hover  {
+    background-color: #70383D;
+    box-shadow: 0 0 10px rgba(112, 56, 61, 0.8), 0 0 20px rgba(112, 56, 61, 0.6), 0 0 30px rgba(112, 56, 61, 0.4);
   }
   
   footer {
