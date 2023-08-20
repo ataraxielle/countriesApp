@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+   
+    <link rel="stylesheet" href="population.css">
+    <title>Population Chart</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+<nav class="navbar sticky-top navbar-expand-lg navCustom">
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448" width="40px">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="landing.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Countries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="maps.html">Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="population.html">Population</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+    <!-- Breadcrumb -->
+    <div class="container breadcrumb" id = "breadcrumb">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" class = "breadCrumbA">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Countries</li>
+        </ol>
+      </nav>
+    </div>
+      <!-- Content here -->
+  <div class="container mt-3 countryDetailsContainer">
+    <div class="chart-container">
+        <canvas id="populationChart"></canvas>
+    </div>
+    <div class="table-container">
+        <table id="populationTable">
+            <thead>
+                <tr>
+                    <th>Continent</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="population.js"></script>
+</body>
+</html>
