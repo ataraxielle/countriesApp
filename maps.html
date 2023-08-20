@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Map Viewer</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="maps.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+/>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+<nav class="navbar sticky-top navbar-expand-lg navCustom">
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448" width="40px">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="landing.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Countries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="maps.html">Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+    <!-- Breadcrumb -->
+    <div class="container breadcrumb" id = "breadcrumb">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class = "breadCrumbA">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Maps</li>
+        </ol>
+      </nav>
+    </div>
+    
+    <div class="container mt-3 countryDetailsContainer">
+  <h1>Select a Country</h1>
+  <input type="text" id="searchInput" placeholder="Search for a country">
+  <div id="tableContainer">
+    <table id="countryTable">
+      <thead>
+     
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+  <div id="map"></div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="googleMaps.js"></script>
+  
+
+</body>
+</html>

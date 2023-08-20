@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #tableContainer {
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: scroll; /* Add vertical scroll when content overflows */
+    border: 1px solid #ccc; /* Optional: Add a border for styling */
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #countryTable {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #countryTable th,
+  #countryTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+  

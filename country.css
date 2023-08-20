@@ -1,7 +1,7 @@
 /* Custom styles for the country page */
 #country-details,
 #country-more {
-  background-color: #f8f9fa;
+  background-color: #703859;
   margin: 0 auto; /* Center the containers horizontally */
   padding: 20px;
   border-radius: 8px;
@@ -9,6 +9,7 @@
   margin-top: 20px;
   min-height: 22vh;
   font-size: 14pt;
+  color: white;
 }
 
 
@@ -18,23 +19,46 @@
   justify-content: center;
 }
 
+.countryCoatOfArmssContainer{
+  background-color: #704F38;
+  text-align: center;
+  height: 60vh;
+  padding: 10px;
+  margin-top: 2%;
+}
+
 .card {
-  width: 100%;
+  width: 80%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 15px;
+  border-radius: 10px;
   justify-content: center;
+  background-color: white;
 
 }
 
-#flag, #coatOfArms{
+#flag {
   background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100%;
   text-align: right;
   justify-content: right;
+  height: 30vh;
 }
-
+#coatOfArms {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 30%;
+  text-align: right;
+  justify-content: right;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: auto;
+  transition:cubic-bezier(1, 0, 0, 1)
+}
+#coatOfArms:hover {
+  height: 35%;
+}
 #country-details h2 {
   font-size: 24px;
   margin-bottom: 10px;

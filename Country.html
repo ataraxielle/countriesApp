@@ -19,23 +19,41 @@
 
 </head>
 <body>
-     <!-- Navigation Bar -->
-  <nav class="navbar sticky-top lg navbar-dark bg-dark ">
-    <div class = "row">
-      <div class = "col-4">
-    <img src = "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448" width = "40px">
+    <!-- Navigation Bar -->
+<nav class="navbar sticky-top navbar-expand-lg navCustom">
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448" width="40px">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="landing.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Countries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class = "col-8 text-left">
-    <a class="navbar-brand" href="#">Countries</a>
-  </div>
-  </div>
-  </nav>
+</nav>
+
 
   <!-- Breadcrumb -->
   <div class="container breadcrumb">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="index.html" class = "breadCrumbA">Countries</a></li>
         <li class="breadcrumb-item active" aria-current="page" id = "countryBreadcrumb">Countries</li>
       </ol>
     </nav>
@@ -47,26 +65,13 @@
     <hr>
 
     <div class="row mt-4">
-      <div class="col-md-4">
+      <div class="col-md-6">
         
-        <div class="card">
+      
           <img id="flag" class="flag-image">
-          <div class="card-body">
-            <h5 class="card-title">Flag</h5>
-            
-          </div>
-        </div>
+          
       </div>
       <div class="col-md-6">
-        <div class="card">
-          <div id="map" style="width: 100%; height: 300px;"></div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Location</h5>
-            <div id="country-details" class="text-left"></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Details</h5>
@@ -74,9 +79,39 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <img id="coatOfArms" class="coatOfArms-image">
       </div>
+    </div>
+    <div class=" countryCoatOfArmssContainer">
+      <div class="row mt-4">
+        <div class="col">
+          <h5 class = "mt-4" style = "color: white">Coat of Arms</h5>
+          <hr>
+          <img id="coatOfArms" class="coatOfArms-image mb-4">
+          
+        </div>
+
+      </div>
+    </div>
+    <div class="container mt-3 countryDetailsContainer">
+    </div>
+
+    <div class=" container countryDetailsContainer text-center justify-center">
+      <div class="row  mt-4">
+   
+     
+        <div class="card">
+          <div id="map" style="width: 100%; height: 350px;"></div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Location</h5>
+            <div id="country-details" class="text-center"></div>
+          
+        </div>
+      </div>
+
+      </div>
+      </div>
+      
+      
     </div>
 
     <div class="row mt-4">
