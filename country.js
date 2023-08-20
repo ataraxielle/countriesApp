@@ -38,6 +38,11 @@ fetch(`https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}`)
     const countryTimezoneElement = document.createElement("p");
     countryTimezoneElement.textContent = `Timezones: ${country.timezones}`;
     countryDetails.appendChild(countryTimezoneElement);
+
+   
+
+    
+  
     
   })
   .catch(error => console.error("Error fetching country details:", error));
